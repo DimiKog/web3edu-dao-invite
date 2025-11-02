@@ -1,0 +1,15 @@
+{
+    "name": "Web3Edu.gr DAO Invite",
+    "description": "Soulbound invite token for the Web3Edu.gr DAO, awarded to participants of the PoE Festival 2025.",
+    "image": "ipfs://bafkreicf27idmmu2ivdx3ww62a2rzzwugln36ikxdkb4a4uu67nl6nu3ea",
+    "attributes": [
+        {
+            "trait_type": "Edition",
+            "value": "Festival 2025"
+        },
+        {
+            "trait_type": "Type",
+            "value": "Soulbound"
+        }
+    ]
+}
