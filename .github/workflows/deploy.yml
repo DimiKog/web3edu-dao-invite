@@ -1,5 +1,4 @@
-# .github/workflows/deploy.yml
-name: Deploy DAO Invite to web3edu.gr/dao-invite
+name: Deploy DAO Invite to web3edu-site
 
 on:
   push:
@@ -9,28 +8,25 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
 
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build site
         run: npm run build
 
-      - name: Deploy to web3edu-site/dao-invite
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: DimiKog/web3edu-site
           publish_dir: ./dist
           destination_dir: dao-invite
           publish_branch: main
-          user_name: 'DimiKog'
-          user_email: 'dimitriskogias@gmail.com'
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: '🚀 Deploy DAO Invite site'
