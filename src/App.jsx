@@ -458,30 +458,37 @@ function App({ isDarkMode, onToggleDarkMode }) {
                   {/* Return to Web3Edu button */}
                   <a
                     href="https://web3edu.dimikog.org/"
-                    className="mt-6 inline-block rounded bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-800 hover:bg-indigo-200"
+                    className="mt-8 inline-flex items-center gap-2 rounded-full border border-indigo-400/40 bg-indigo-500/10 px-5 py-2 text-sm font-semibold text-indigo-200 transition-all duration-200 hover:-translate-y-0.5 hover:border-indigo-300 hover:bg-indigo-500/20 hover:text-white"
                   >
-                    ← Επιστροφή στο Web3Edu
+                    <span aria-hidden="true">←</span>
+                    Επιστροφή στο Web3Edu
                   </a>
 
                   {/* Invite form block - improved, light/dark theme adaptive */}
                   <div className="mt-12 text-center">
-                    <p className="text-lg font-medium text-gray-100 dark:text-white mb-4">
-                      📬 Συμπλήρωσε τη φόρμα για να σε προσκαλέσουμε στο <span className="text-primary-400 font-semibold">Web3Edu DAO</span>
+                    <p className="mb-4 text-lg font-medium text-gray-100 dark:text-white">
+                      📬 Συμπλήρωσε τη φόρμα για να σε προσκαλέσουμε στο <span className="font-semibold text-primary-400">Web3Edu DAO</span>
                     </p>
                     <a
                       href="https://forms.gle/FcZBWCm6o8cBDT3Z6"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block rounded-lg bg-green-600 hover:bg-green-700 px-6 py-3 text-lg font-semibold text-white shadow-md transition-all"
+                      className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-emerald-500 via-green-400 to-lime-400 px-8 py-3 text-lg font-semibold text-white shadow-[0_18px_40px_-20px_rgba(34,197,94,0.9)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_45px_-18px_rgba(34,197,94,0.95)] focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2 focus:ring-offset-slate-900 dark:focus:ring-offset-slate-950"
                     >
-                      ✨ Άνοιξε τη Φόρμα
+                      <span className="mr-3 text-xl transition-transform duration-300 group-hover:translate-x-0.5">✨</span>
+                      Γίνε Μέλος Σήμερα
+                      <span className="ml-3 text-xl transition-transform duration-300 group-hover:translate-x-0.5 group-hover:rotate-3">🚀</span>
                     </a>
+                    <p className="mt-3 text-sm text-emerald-200">
+                      Θέσεις περιορισμένες — θα σου στείλουμε πρόσκληση άμεσα.
+                    </p>
                     <div className="mt-8">
                       <a
                         href="https://web3edu.dimikog.org/"
-                        className="text-purple-400 hover:underline text-sm"
+                        className="inline-flex items-center gap-2 text-sm font-medium text-purple-300 transition-colors duration-200 hover:text-white"
                       >
-                        ← Επιστροφή στο Web3Edu
+                        <span aria-hidden="true">←</span>
+                        Επιστροφή στο Web3Edu
                       </a>
                     </div>
                   </div>
