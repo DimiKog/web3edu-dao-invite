@@ -454,6 +454,29 @@ function App({ isDarkMode, onToggleDarkMode }) {
                       </a>
                     )}
                   </div>
+
+                  {/* Return to Web3Edu button */}
+                  <a
+                    href="https://web3edu.dimikog.org/"
+                    className="mt-6 inline-block rounded bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-800 hover:bg-indigo-200"
+                  >
+                    ← Επιστροφή στο Web3Edu
+                  </a>
+
+                  {/* Invite form block */}
+                  <div className="mt-8 text-center">
+                    <p className="text-lg font-semibold text-white">
+                      📝 Συμπλήρωσε τη φόρμα για να σε προσκαλέσουμε στο Web3Edu DAO
+                    </p>
+                    <a
+                      href="https://forms.gle/FcZBWCm6o8cBDT3Z6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition"
+                    >
+                      👉 Άνοιξε τη Φόρμα
+                    </a>
+                  </div>
                 </>
               )}
             </div>
