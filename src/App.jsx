@@ -3,6 +3,7 @@ import { useAccount, useWalletClient } from 'wagmi'
 import { ethers } from 'ethers'
 import { useEffect, useRef, useState } from 'react'
 import abiJson from './contracts/Web3EduDAOInvite.abi.json'
+import profileImage from './assets/dimi.jpeg'
 
 // contract constants (keep here or move to separate file if you prefer)
 const NFT_CONTRACT_ADDRESS = '0x6BDe3708d5A92A7B5ef3d409Ffb2b30f49243240'
@@ -39,6 +40,9 @@ const COPY = {
     alertMintSuccess: (tokenId, explorerLink) =>
       `✅ Το NFT κόπηκε με επιτυχία!\n\n${tokenId ? `Token ID: ${tokenId}\n\n` : ''}Δες τη συναλλαγή:\n${explorerLink}`,
     alertMintFailed: '⚠️ Η διαδικασία mint απέτυχε:',
+    footerHeading: 'Επικοινωνία',
+    footerEmailLabel: 'Email',
+    footerLinkedInLabel: 'LinkedIn',
   },
   en: {
     languageLabel: 'Language',
@@ -65,6 +69,9 @@ const COPY = {
     alertMintSuccess: (tokenId, explorerLink) =>
       `✅ NFT minted successfully!\n\n${tokenId ? `Token ID: ${tokenId}\n\n` : ''}View transaction:\n${explorerLink}`,
     alertMintFailed: '⚠️ Minting failed:',
+    footerHeading: 'Contact',
+    footerEmailLabel: 'Email',
+    footerLinkedInLabel: 'LinkedIn',
   },
 }
 
@@ -508,6 +515,30 @@ function App({ isDarkMode, onToggleDarkMode }) {
           ))}
         </section>
       </main>
+      <footer className="app-footer" role="contentinfo">
+        <div className="app-footer__content">
+          <img
+            className="app-footer__avatar"
+            src={profileImage}
+            alt="Dimitris Kogias"
+            loading="lazy"
+          />
+          <span className="app-footer__label">{t.footerHeading}</span>
+          <div className="app-footer__links">
+            <a className="app-footer__link" href="mailto:dimitris@kogias.eu">
+              {t.footerEmailLabel}: dimitris@kogias.eu
+            </a>
+            <a
+              className="app-footer__link"
+              href="https://www.linkedin.com/in/dimitris-kogias-b376222a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.footerLinkedInLabel}: linkedin.com/in/dimitris-kogias-b376222a/
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
