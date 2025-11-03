@@ -781,6 +781,12 @@ html.dark body {
 }
 
 @media (max-width: 768px) {
+  .app-shell {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
   .interface-toggles {
     top: 1.25rem;
     right: 1.25rem;
@@ -815,10 +821,12 @@ html.dark body {
 
   .app-shell {
     padding-top: 2rem;
+    align-items: stretch;
   }
 
   .app-content {
     gap: 2.75rem;
+    width: 100%;
   }
 }
 
