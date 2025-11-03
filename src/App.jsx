@@ -22,7 +22,7 @@ const COPY = {
     heroTitle: 'Απόκτησε την πρόσκληση για το Web3Edu DAO',
     heroSubtitle: 'Διεκδίκησε το αποκλειστικό σου token και γίνε μέλος της επόμενης γενιάς Web3 εκπαίδευσης με αποδείξιμη συμμετοχή.',
     connectWallet: 'Σύνδεσε Πορτοφόλι',
-    connectHelper: 'Σύνδεσε το πορτοφόλι σου για να επιβεβαιώσεις την επιλεξιμότητα και να κάνεις mint το μη μεταβιβάσιμο NFT πρόσκλησης.',
+    connectHelper: 'Σύνδεσε το πορτοφόλι σου για να επιβεβαιώσεις την επιλεξιμότητα και να κάνεις mint το μη μεταβιβάσιμο NFT της πρόσκλησης.',
     wrongNetwork: 'Λάθος δίκτυο',
     mintStatusIdle: 'Το πορτοφόλι συνδέθηκε. Κάνε mint την πρόσκληση για να γίνεις ενεργό μέλος.',
     mintStatusSuccess: 'Έχεις ήδη κάνει mint την πρόσκλησή σου — δες τα παρακάτω links.',
@@ -73,12 +73,12 @@ const BENEFITS_BY_LANGUAGE = {
     {
       icon: '🧠',
       title: 'Επιμελημένα Μονοπάτια Μάθησης',
-      description: 'Πρόσβαση σε εργαστήρια, AMAs και πόρους από την κοινότητα για την επόμενη γενιά Web3 builders.',
+      description: 'Πρόσβαση σε εργαστήρια, Q&As και πόρους από την κοινότητα για την επόμενη γενιά Web3 builders.',
     },
     {
       icon: '🤝',
       title: 'Επαληθευμένη Συμμετοχή',
-      description: 'Το soulbound invite αποδεικνύει on-chain την ταυτότητά σου και κρατά τη συμμετοχή χωρίς sybil.',
+      description: 'Το soulbound invite αποδεικνύει on-chain την ταυτότητά σου και κρατά τη συμμετοχή σου προστατεύοντας την από τυχόν επιθέσεις.',
     },
     {
       icon: '🚀',
@@ -90,7 +90,7 @@ const BENEFITS_BY_LANGUAGE = {
     {
       icon: '🧠',
       title: 'Curated Learning Tracks',
-      description: 'Access community-led workshops, AMAs, and resources tailored to the next wave of Web3 builders.',
+      description: 'Access community-led workshops, Q&As, and resources tailored to the next wave of Web3 builders.',
     },
     {
       icon: '🤝',
